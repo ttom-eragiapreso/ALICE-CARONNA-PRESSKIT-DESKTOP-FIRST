@@ -58,7 +58,7 @@ body {
   transform: translate(-50%);
   font-size: 6.5rem;
   font-family: 'Cormorant Garamond', serif;
-  color: var(--titolo-color);
+  color: var(--photo-gallery-background-color);
   text-align: center;
 }
 
