@@ -111,5 +111,40 @@ aside {
 /* PHOTO GALLERY */
 
 .photo-gallery {
+  background-color: #c2c2c28d;
+  padding: 30px 0;
+}
+
+.photo-gallery .container {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 15px; */
+}
+
+
+.card-container {
+  width: calc(100% / 4);
+  padding: 10px;
+}
+.card {
   
+  border: 1px solid black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
+}
+
+.card img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: 0 -15px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  padding: 2px 5px;
 }
