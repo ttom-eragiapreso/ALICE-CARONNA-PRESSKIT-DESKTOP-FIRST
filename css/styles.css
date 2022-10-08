@@ -9,6 +9,7 @@
 img {
   max-width: 100%;
   max-height: 100%;
+  display: block;
 }
 
 .container {
@@ -100,7 +101,7 @@ aside {
   background-color: #282727;
   color: #e3e3e3;
   padding: 0 170px;
-  padding-top: 200px;
+  padding-top: 180px;
   font-size: 1.3rem;
   font-family: 'Playfair Display', serif;
   overflow: auto;
@@ -111,14 +112,14 @@ aside {
 /* PHOTO GALLERY */
 
 .photo-gallery {
-  background-color: #c2c2c28d;
+  /* background-color: #c2c2c28d; */
+  background-color: rgb(216, 177, 86);
   padding: 30px 0;
 }
 
 .photo-gallery .container {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 15px; */
 }
 
 
@@ -127,24 +128,30 @@ aside {
   padding: 10px;
 }
 .card {
-  
   border: 1px solid black;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   overflow: hidden;
+  box-shadow: 5px 3px 10px 0px black;
 }
 
 .card img {
   aspect-ratio: 1/1;
   object-fit: cover;
-  object-position: 0 -15px;
-  margin-bottom: 20px;
+  /* object-position: 0 -15px; */
+  /* margin-bottom: 20px; */
 }
 
 .card p {
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
   padding: 2px 5px;
+  color: #e3e3e3;
+}
+
+.card-description {
+  background-color: rgba(78, 78, 78, 0.743);
+  padding-top: 15px;
 }
