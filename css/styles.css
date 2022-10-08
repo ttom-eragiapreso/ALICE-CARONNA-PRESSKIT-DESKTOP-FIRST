@@ -38,6 +38,9 @@ a {
   color: antiquewhite;
 }
 
+body {
+  font-family:'Playfair Display', serif;
+}
 
 /* LANDING PAGE */
 
@@ -48,6 +51,7 @@ a {
 }
 
 .titolo {
+  width: 100%;
   position: absolute;
   top: 25px;
   left: 50%;
@@ -55,7 +59,7 @@ a {
   font-size: 6.5rem;
   font-family: 'Cormorant Garamond', serif;
   color: var(--titolo-color);
-  /* text-shadow: 7px 4px 0px #530202; */
+  text-align: center;
 }
 
 /* ASIDE */
@@ -112,21 +116,35 @@ aside {
   width: calc(50%);
   background-color: var(--bio-background-color);
   color: var(--bio-text-color);
-  padding: 0 170px;
-  padding-top: 180px;
+  /* padding: 0 170px; */
   font-size: 1.3rem;
   font-family: 'Playfair Display', serif;
-  overflow: auto;
+  display: flex;
+  justify-content: center;
 }
 
+.bio-container {
+  /* border: 1px solid black; */
+  height: 78%;
+  margin-top: 170px;
+  overflow: auto;
+  padding: 0 130px;
+}
 
 
 /* PHOTO GALLERY */
 
 .photo-gallery {
-  /* background-color: #c2c2c28d; */
   background-color: var(--photo-gallery-background-color);
-  padding: 30px 0;
+  padding-bottom: 30px;
+}
+
+.photo-gallery h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  padding-top: 25px;
 }
 
 .photo-gallery .container {
@@ -152,8 +170,6 @@ aside {
 .card img {
   aspect-ratio: 1/1;
   object-fit: cover;
-  /* object-position: 0 -15px; */
-  /* margin-bottom: 20px; */
 }
 
 .card p {
@@ -174,16 +190,34 @@ aside {
   height: 100vh;
   background-color: rgb(40, 40, 40);
   display: flex;
+  flex-direction: column;
+}
+
+.articoli h2 {
+  color: white;
+  text-align: center;
+  margin: 50px 0;
+  font-size: 2.5rem;
+}
+
+.press-container {
+  display: flex;
   align-items: center;
 }
 
-.icons-container {
-  width: 350px;
-  aspect-ratio: 1/1;
-  margin: 0 auto;
-  background-color: white;
+.articolo-container {
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 0 15px;
 }
 
-.icons-container i {
-  font-size: 1.5rem;
+.articolo-container h3 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+iframe {
+  width: 100%;
+  height: calc(100vh - 250px);
+  padding: 10px 0;
 }
