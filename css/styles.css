@@ -1,3 +1,15 @@
+/* ROOT AND VARIABLES */
+:root {
+  --bio-background-color: rgba(244, 244, 244, 0.347);
+  --bio-text-color: rgb(41, 41, 41);
+  --aside-color: #e13741;
+  --titolo-color: #d73641;
+  --photo-gallery-background-color: rgb(216, 177, 86);
+  --card-description-background-color: rgba(78, 78, 78, 0.743);
+}
+
+
+
 /* RESET AND GENERAL */
 
 *, *::before, *::after {
@@ -42,15 +54,15 @@ a {
   transform: translate(-50%);
   font-size: 6.5rem;
   font-family: 'Cormorant Garamond', serif;
-  color: #d73641;
-  text-shadow: 7px 4px 0px #530202;
+  color: var(--titolo-color);
+  /* text-shadow: 7px 4px 0px #530202; */
 }
 
 /* ASIDE */
 
 aside {
   width: 120px;
-  background-color: #e13741;
+  background-color: var(--aside-color);
   height: 100vh;
   display: flex;
   flex-direction: column-reverse;
@@ -98,8 +110,8 @@ aside {
 
 .bio {
   width: calc(50%);
-  background-color: #282727;
-  color: #e3e3e3;
+  background-color: var(--bio-background-color);
+  color: var(--bio-text-color);
   padding: 0 170px;
   padding-top: 180px;
   font-size: 1.3rem;
@@ -113,7 +125,7 @@ aside {
 
 .photo-gallery {
   /* background-color: #c2c2c28d; */
-  background-color: rgb(216, 177, 86);
+  background-color: var(--photo-gallery-background-color);
   padding: 30px 0;
 }
 
@@ -154,4 +166,24 @@ aside {
 .card-description {
   background-color: rgba(78, 78, 78, 0.743);
   padding-top: 15px;
+}
+
+/* ARTICOLI */
+
+.articoli {
+  height: 100vh;
+  background-color: rgb(40, 40, 40);
+  display: flex;
+  align-items: center;
+}
+
+.icons-container {
+  width: 350px;
+  aspect-ratio: 1/1;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.icons-container i {
+  font-size: 1.5rem;
 }
