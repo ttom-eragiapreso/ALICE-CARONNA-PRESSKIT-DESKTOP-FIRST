@@ -124,9 +124,8 @@ aside {
 }
 
 .bio-container {
-  /* border: 1px solid black; */
-  height: 78%;
-  margin-top: 170px;
+  height: calc(100% - 160px);
+  margin-top: auto;
   overflow: auto;
   padding: 0 130px;
 }
